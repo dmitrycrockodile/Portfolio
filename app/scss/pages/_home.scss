@@ -1,0 +1,132 @@
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    @include image-set;
+    background-image: linear-gradient(rgba($color-white, .2), 
+                                      rgba($color-white, .3)),
+                                        url('../images/bg.jpg');
+    flex-direction: column;
+
+    &__heading {
+        font-size: 6rem;
+        font-weight: 700;
+        color: $color-white;
+        background-color: $main-color;
+        padding: .3rem;
+        margin-bottom: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        border-bottom: .3rem solid $color-white;
+        text-shadow: .2rem .2rem 1rem $color-grey-dark;
+        transform: skew(-10deg);
+
+        @include respond(tab-port) {
+            font-size: 4rem;
+        }
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
+
+        @include respond(phone-smaller) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__btn {
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: $color-grey-dark-2;
+        background-color: $color-white;
+        border: .3rem solid $color-grey-dark-2;
+        padding: .5rem 1rem;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+    }
+}
+
+.section-2 {
+    width: 100%;
+    height: 100%;
+    padding: 15rem 0 10rem 0;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond(phone) {
+        padding: 10rem;
+    }
+}
+
+.section-heading {
+    font-size: 5rem;
+    color: $color-grey-dark-2;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    border-bottom: .3rem solid $color-grey-dark-2;
+    margin-bottom: 15rem;
+    text-shadow: .2rem .2rem .5rem $color-grey-dark;
+
+    @include respond(phone) {
+        margin-bottom: 10rem;
+    }
+
+    @include respond(phone-smaller) {
+        text-align: center;
+    }
+}
+
+.section-3 {
+    width: 100%;
+    height: 100%;
+    padding: 10rem 0;
+    background-color: $color-grey-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-4 {
+    width: 100%;
+    height: 70vh;
+    background-color: $color-grey-dark-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @include respond(tab-mini-land) {
+        height: 80vh;
+    }
+
+    @include respond(phone-small) {
+        height: 70rem;
+    }
+
+    &-heading {
+        color: $color-white;
+        box-shadow: none;
+        border-color: $color-white;
+        margin-bottom: 5rem;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 30vh;
+    background-color: $color-grey-dark-3;
+    flex-direction: column;
+
+    &__copyright {
+        color: $color-grey;
+        font-size: 2rem;
+        letter-spacing: .2rem;
+        font-weight: 300;
+        text-align: center;
+    
+        @include respond(phone) {
+            width: 70%;
+        }
+    }
+}

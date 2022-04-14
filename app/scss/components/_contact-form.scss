@@ -1,0 +1,34 @@
+.contact-form {   
+   width: 50rem;
+   flex-direction: column;
+
+   @include respond(phone) {
+      width: 40rem;
+   }
+
+   input,
+   textarea {
+      width: 100%;
+      padding: .5rem;
+      margin: .5rem 0;
+      background-color: $color-grey-light;
+      font-size: 1.5rem;
+      border: .2rem solid $main-color;
+      color: $color-grey-dark;
+   }
+
+   textarea {
+      height: 10rem;
+      max-height: 50rem;
+      max-width: 100%;
+      min-width: 70%;
+   }
+
+   &__btn {
+      background-color: $main-color;
+      color: $color-white;
+      text-transform: uppercase;
+      letter-spacing: 1rem;
+      cursor: pointer;
+   }
+}
