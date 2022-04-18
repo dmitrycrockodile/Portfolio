@@ -1,5 +1,18 @@
-.projects-wrapper {
-   flex-wrap: wrap;
+.landings {
+
+   &__wrapper {
+      flex-wrap: wrap;
+   }
+
+   &__heading {
+      font-size: 4rem;
+      color: $color-grey-dark-2;
+      text-transform: uppercase;
+      letter-spacing: .3rem;
+      margin-left: 8rem;
+      margin-bottom: 1.5rem;
+      text-shadow: .1rem .1rem .5rem $color-grey-dark;
+   }
 }
 
 .project {
@@ -69,6 +82,7 @@
 
    &__img {
       width: 46rem;
+      height: 25rem;
       transition: opacity .3s;
 
       @include respond(phone) {
