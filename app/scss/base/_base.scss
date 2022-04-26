@@ -59,6 +59,10 @@ a {
 	align-items: center;
 }
 
+.wrap {
+   flex-wrap: wrap;
+}
+
 .sticky {
    position: fixed !important;
    top: 0 !important;

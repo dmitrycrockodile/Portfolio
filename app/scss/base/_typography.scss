@@ -4,15 +4,10 @@
    text-transform: uppercase;
    letter-spacing: .5rem;
    border-bottom: .3rem solid $color-grey-dark-2;
-   margin-bottom: 8rem;
    text-shadow: .2rem .2rem .5rem $color-grey-dark;
 
-   @include respond(phone) {
-       margin-bottom: 10rem;
-   }
-
    @include respond(phone-smaller) {
-       text-align: center;
+      text-align: center;
    }
 }
 
@@ -59,4 +54,15 @@
    @include respond(phone) {
       width: 70%;
    }
+}
+
+.projects__heading {
+   font-size: 4rem;
+   color: $color-grey-dark-2;
+   text-transform: uppercase;
+   letter-spacing: .3rem;
+   margin-left: 8rem;
+   margin-bottom: 1.5rem;
+   text-shadow: .1rem .1rem .5rem $color-grey-dark;
+   margin-top: 9rem;
 }
