@@ -50,6 +50,10 @@
    letter-spacing: .2rem;
    font-weight: 300;
    text-align: center;
+   max-width: 100rem;
+   &:last-child {
+      margin-top: 3rem;
+   }
 
    @include respond(phone) {
       width: 70%;
