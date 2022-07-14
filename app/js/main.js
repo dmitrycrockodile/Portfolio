@@ -48,5 +48,3 @@ const focusOnProject = () => {
 };
 
 focusOnProject();
-
-document.designMode = 'on';
